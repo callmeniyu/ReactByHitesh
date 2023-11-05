@@ -15,13 +15,13 @@ function App() {
     function amountConverter() {
         setConvertedAmount((amount * currencyInfo[convertedCurrency]).toFixed(2))
     }
-  
-  function swap() {
-    setCurrency(convertedCurrency)
-    setConvertedCurrency(currency)
-    setAmount(0)
-    setConvertedAmount(0)
-  }
+
+    function swap() {
+        setCurrency(convertedCurrency)
+        setConvertedCurrency(currency)
+        setAmount(0)
+        setConvertedAmount(0)
+    }
 
     return (
         <form
@@ -36,9 +36,9 @@ function App() {
                     amount={amount}
                     currency={currency}
                     onAmountChange={(amount) => setAmount(amount)}
-            onCurrencyChange={(currency) => {
-              setCurrency(currency);
-              amountConverter();
+                    onCurrencyChange={(currency) => {
+                        setCurrency(currency)
+                        amountConverter()
                     }}
                     options={options}
                 />

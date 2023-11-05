@@ -3,12 +3,12 @@ import React, { useState } from "react"
 function InputComp({
     isReadOnly,
     label,
-    amount=0,
+    amount = 0,
     currency = "usd",
     onAmountChange,
     onCurrencyChange,
     options = [],
-    convertedAmount=0.00,
+    convertedAmount = 0.0,
     convertedCurrency,
 }) {
     return (
@@ -23,7 +23,6 @@ function InputComp({
                         onAmountChange && onAmountChange(Number(e.target.value))
                     }}
                     id="number"
-
                     value={amount || convertedAmount}
                 />
             </div>

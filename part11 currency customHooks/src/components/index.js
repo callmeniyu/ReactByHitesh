@@ -1,2 +1,2 @@
-import InputComp from "./InputComp";
-export { InputComp };
+import InputComp from "./InputComp"
+export { InputComp }
