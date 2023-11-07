@@ -1,3 +1,6 @@
+
+
+
 body{
     padding: 0;
     box-sizing: border-box;
@@ -190,7 +193,29 @@ hr{
 }
 
 
+/* ////////////////////////////    About   //////////////////////////////// */
 
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 2rem 4rem 0 3rem;
+    flex-wrap: wrap;
+}
+.about-img{
+    width: 33rem;
+    height: 28rem;
+}
+.about-right{
+    width: 35rem;
+}
+.about-right h2{
+    margin-top: 6rem;
+    font-size: 2.3rem;
+}
+.about-right p{
+    color: gray;
+}
 
 
 
