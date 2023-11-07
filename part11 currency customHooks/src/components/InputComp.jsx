@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState , useId } from "react"
 
 function InputComp({
     isReadOnly,
@@ -11,10 +11,11 @@ function InputComp({
     convertedAmount = 0.0,
     convertedCurrency,
 }) {
+    const id = useId();
     return (
         <div className="card">
             <div className="left">
-                <label htmlFor="">{label}</label>
+                <label htmlFor={id}>{label}</label>
 
                 <input
                     readOnly={isReadOnly}

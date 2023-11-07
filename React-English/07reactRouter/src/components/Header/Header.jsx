@@ -87,8 +87,6 @@ export default function Header() {
                                     User
                                 </NavLink>
                             </li>
-                            
-                            
                         </ul>
                     </div>
                 </div>
