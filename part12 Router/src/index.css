@@ -6,6 +6,11 @@ body{
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
+/* ////////////////////////////    Header   //////////////////////////////// */
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -60,6 +65,11 @@ nav>.btns{
     border: none;
     font-weight: 600;
 }
+
+
+/* ////////////////////////////    Footer  //////////////////////////////// */
+
+
 .footer{
     display: flex;
     justify-content: space-between;
@@ -98,11 +108,86 @@ hr{
 }
 .footer li{
     color: gray;
-
 }
 
+.copyrights{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 1rem;
+}
 
+.social-media{
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-media svg{
+    width: 1rem;
+    height: 1rem;
+    color: gray;
+}
+.social-media svg:hover{
+    color: black;
+}
 
+/* ////////////////////////////    HOME //////////////////////////////// */
+
+.home-container{
+    padding:6rem 3.5rem 0 3.5rem;
+}
+.home-top{
+    display: flex;
+    justify-content: space-between;
+}
+.home-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 2rem;
+}
+.home-right h2{
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+.home-right span{
+    display: block;
+    font-size: 2.3rem;
+    text-align: end;
+
+}
+.home-top-img{
+    width: 25rem;
+    height: 17rem;
+}
+.download-btn{
+    background-color: #c2410c;
+    color: white;
+    width: 9.5rem;
+    padding:0.6rem 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.home-bottom{
+    margin: 13rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-bottom-img{
+    width: 27rem;
+    height: 17rem;
+}
+.home-bottom h3{
+    font-size: 3rem;
+    font-weight: 500;
+}
 
 
 
