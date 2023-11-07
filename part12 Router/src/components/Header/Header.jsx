@@ -1,11 +1,11 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 function Header() {
     return (
         <nav>
-            <Link to="" >
-                <img src="	https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png" alt=""  className="header-logo"/>
+            <Link>
+                <img src="	https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png" alt="" className="header-logo" />
             </Link>
 
             <Link to="#" className="btns">
@@ -16,21 +16,49 @@ function Header() {
             </Link>
 
             <ul className="nav-items-div">
-                <Link to="" className="nav-item">
-                    <li >Home</li>
-                </Link>
+                <li>
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            `nav-item ${isActive && "active"}`
+                        }
+                    >
+                        Home
+                    </NavLink>
+                </li>
 
-                <Link to="about" className="nav-item">
-                    <li>About</li>
-                </Link>
+                <li>
+                    <NavLink
+                        to="about"
+                        className={({ isActive }) =>
+                            `nav-item ${isActive && "active"}`
+                        }
+                    >
+                        About
+                    </NavLink>
+                </li>
 
-                <Link to="github" className="nav-item">
-                    <li>Github</li>
-                </Link>
+                <li>
+                    <NavLink
+                        to="github"
+                        className={({ isActive }) =>
+                            `nav-item ${isActive && "active"}`
+                        }
+                    >
+                        Github
+                    </NavLink>
+                </li>
 
-                <Link to="user" className="nav-item">
-                    <li>User</li>
-                </Link>
+                <li>
+                    <NavLink
+                        to="user"
+                        className={({ isActive }) =>
+                            `nav-item ${isActive && "active"}`
+                        }
+                    >
+                        User
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     )

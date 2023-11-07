@@ -22,6 +22,7 @@ nav{
     padding:0.5rem 1rem;
     
 }
+
 .header-logo{
     width: 9.7rem;
     height: 3rem;
@@ -217,7 +218,16 @@ hr{
     color: gray;
 }
 
+/* ////////////////////////////    Github   //////////////////////////////// */
 
+.github-container{
+    padding: 3rem;
+    background-color: #c2410c;
+}
+.active{
+    color: #d96638;
+    text-decoration: none;
+}
 
 @media (max-width : 1024px) {
 .nav-items-div{
