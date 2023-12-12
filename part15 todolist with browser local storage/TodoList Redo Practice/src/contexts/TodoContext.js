@@ -1,10 +1,10 @@
 import { createContext, useContext } from "react";
 
 const TodoContext = createContext({
-    todos: [
+    todoArray: [
         {
-            id: 1,
-            todo: "nothing",
+            id: Number,
+            todoText: String,
             completed:false
         }
     ],

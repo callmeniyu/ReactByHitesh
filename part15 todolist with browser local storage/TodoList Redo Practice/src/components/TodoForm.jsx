@@ -9,15 +9,20 @@ function TodoForm() {
     const add = (e) => {
         e.preventDefault()
         if (!todoText) return
-        addTodo(todoText)
+        addTodo({ todoText })
         setTodoText("")
     }
 
     return (
         <div>
-            <form onSubmit={add}>
-                <input type="text" onChange={(e) => setTodoText(e.target.value)} value={todoText} />
-                <button type="submit">Add</button>
+            <form onSubmit={add} className="flex">
+                <input
+                    type="text"
+                    onChange={(e) => setTodoText(e.target.value)}
+                    className="w-full border border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5"
+                    value={todoText}
+                />
+                <button type="submit" className="rounded-r-lg px-3 py-1 bg-green-600 text-white shrink-0">Add</button>
             </form>
         </div>
     )
